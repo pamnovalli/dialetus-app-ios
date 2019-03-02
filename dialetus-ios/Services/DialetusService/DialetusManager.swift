@@ -40,6 +40,31 @@ class DialetusManager {
         
     }
     
+    func dialects(from region: String, completion: @escaping ([Dialect]?, Error?) -> Void){
+        
+        sessionTask?.cancel()
+        
+        let url = baseURL
+            .appendingPathComponent("regions")
+            .appendingPathComponent(region)
+            .appendingPathComponent("dialects")
+        
+        
+        sessionTask = session.dataTask(with: url) { (data, response, error) in
+            
+            guard let data = data else {
+                completion(nil, error)
+                return
+            }
+            
+            let dialect = try! JSONDecoder().decode([Dialect].self, from: data)
+            completion(dialect, nil)
+            
+            
+        }
+        
+        sessionTask?.resume()
+    }
     
 }
 
