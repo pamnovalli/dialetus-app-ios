@@ -1,0 +1,644 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15BFF5A5222AEBC5009C6470 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BFF5A4222AEBC5009C6470 /* AppDelegate.swift */; };
+		15BFF5A7222AEBC5009C6470 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BFF5A6222AEBC5009C6470 /* ViewController.swift */; };
+		15BFF5AA222AEBC5009C6470 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15BFF5A8222AEBC5009C6470 /* Main.storyboard */; };
+		15BFF5AC222AEBC6009C6470 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15BFF5AB222AEBC6009C6470 /* Assets.xcassets */; };
+		15BFF5AF222AEBC6009C6470 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15BFF5AD222AEBC6009C6470 /* LaunchScreen.storyboard */; };
+		15BFF5BA222AEBC7009C6470 /* dialetus_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BFF5B9222AEBC7009C6470 /* dialetus_iosTests.swift */; };
+		15BFF5C5222AEBC7009C6470 /* dialetus_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BFF5C4222AEBC7009C6470 /* dialetus_iosUITests.swift */; };
+		40A57E16D6BCFC730B02243E /* Pods_dialetus_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42358769CE5268ACD06BF21F /* Pods_dialetus_ios.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15BFF5B6222AEBC7009C6470 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15BFF599222AEBC5009C6470 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15BFF5A0222AEBC5009C6470;
+			remoteInfo = "dialetus-ios";
+		};
+		15BFF5C1222AEBC7009C6470 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15BFF599222AEBC5009C6470 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15BFF5A0222AEBC5009C6470;
+			remoteInfo = "dialetus-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15BFF5A1222AEBC5009C6470 /* dialetus-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dialetus-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15BFF5A4222AEBC5009C6470 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		15BFF5A6222AEBC5009C6470 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		15BFF5A9222AEBC5009C6470 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		15BFF5AB222AEBC6009C6470 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15BFF5AE222AEBC6009C6470 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		15BFF5B0222AEBC6009C6470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15BFF5B5222AEBC7009C6470 /* dialetus-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dialetus-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15BFF5B9222AEBC7009C6470 /* dialetus_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dialetus_iosTests.swift; sourceTree = "<group>"; };
+		15BFF5BB222AEBC7009C6470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15BFF5C0222AEBC7009C6470 /* dialetus-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dialetus-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15BFF5C4222AEBC7009C6470 /* dialetus_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dialetus_iosUITests.swift; sourceTree = "<group>"; };
+		15BFF5C6222AEBC7009C6470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42358769CE5268ACD06BF21F /* Pods_dialetus_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dialetus_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D9236B5B43A6D1C214B5D82 /* Pods-dialetus-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dialetus-ios.release.xcconfig"; path = "Target Support Files/Pods-dialetus-ios/Pods-dialetus-ios.release.xcconfig"; sourceTree = "<group>"; };
+		D3CD906C035DD5ACE35FFF96 /* Pods-dialetus-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dialetus-ios.debug.xcconfig"; path = "Target Support Files/Pods-dialetus-ios/Pods-dialetus-ios.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15BFF59E222AEBC5009C6470 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40A57E16D6BCFC730B02243E /* Pods_dialetus_ios.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15BFF5B2222AEBC7009C6470 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15BFF5BD222AEBC7009C6470 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15BFF598222AEBC5009C6470 = {
+			isa = PBXGroup;
+			children = (
+				15BFF5A3222AEBC5009C6470 /* dialetus-ios */,
+				15BFF5B8222AEBC7009C6470 /* dialetus-iosTests */,
+				15BFF5C3222AEBC7009C6470 /* dialetus-iosUITests */,
+				15BFF5A2222AEBC5009C6470 /* Products */,
+				AAE0361ABE28DEDC5B2A6152 /* Pods */,
+				60ECF8B77150D7AE79BC37F6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		15BFF5A2222AEBC5009C6470 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15BFF5A1222AEBC5009C6470 /* dialetus-ios.app */,
+				15BFF5B5222AEBC7009C6470 /* dialetus-iosTests.xctest */,
+				15BFF5C0222AEBC7009C6470 /* dialetus-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15BFF5A3222AEBC5009C6470 /* dialetus-ios */ = {
+			isa = PBXGroup;
+			children = (
+				15BFF5A4222AEBC5009C6470 /* AppDelegate.swift */,
+				15BFF5A6222AEBC5009C6470 /* ViewController.swift */,
+				15BFF5A8222AEBC5009C6470 /* Main.storyboard */,
+				15BFF5AB222AEBC6009C6470 /* Assets.xcassets */,
+				15BFF5AD222AEBC6009C6470 /* LaunchScreen.storyboard */,
+				15BFF5B0222AEBC6009C6470 /* Info.plist */,
+			);
+			path = "dialetus-ios";
+			sourceTree = "<group>";
+		};
+		15BFF5B8222AEBC7009C6470 /* dialetus-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				15BFF5B9222AEBC7009C6470 /* dialetus_iosTests.swift */,
+				15BFF5BB222AEBC7009C6470 /* Info.plist */,
+			);
+			path = "dialetus-iosTests";
+			sourceTree = "<group>";
+		};
+		15BFF5C3222AEBC7009C6470 /* dialetus-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				15BFF5C4222AEBC7009C6470 /* dialetus_iosUITests.swift */,
+				15BFF5C6222AEBC7009C6470 /* Info.plist */,
+			);
+			path = "dialetus-iosUITests";
+			sourceTree = "<group>";
+		};
+		60ECF8B77150D7AE79BC37F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42358769CE5268ACD06BF21F /* Pods_dialetus_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AAE0361ABE28DEDC5B2A6152 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3CD906C035DD5ACE35FFF96 /* Pods-dialetus-ios.debug.xcconfig */,
+				8D9236B5B43A6D1C214B5D82 /* Pods-dialetus-ios.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15BFF5A0222AEBC5009C6470 /* dialetus-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15BFF5C9222AEBC7009C6470 /* Build configuration list for PBXNativeTarget "dialetus-ios" */;
+			buildPhases = (
+				6BA611E67B3374789B7EB71F /* [CP] Check Pods Manifest.lock */,
+				15BFF59D222AEBC5009C6470 /* Sources */,
+				15BFF59E222AEBC5009C6470 /* Frameworks */,
+				15BFF59F222AEBC5009C6470 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "dialetus-ios";
+			productName = "dialetus-ios";
+			productReference = 15BFF5A1222AEBC5009C6470 /* dialetus-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		15BFF5B4222AEBC7009C6470 /* dialetus-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15BFF5CC222AEBC7009C6470 /* Build configuration list for PBXNativeTarget "dialetus-iosTests" */;
+			buildPhases = (
+				15BFF5B1222AEBC7009C6470 /* Sources */,
+				15BFF5B2222AEBC7009C6470 /* Frameworks */,
+				15BFF5B3222AEBC7009C6470 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15BFF5B7222AEBC7009C6470 /* PBXTargetDependency */,
+			);
+			name = "dialetus-iosTests";
+			productName = "dialetus-iosTests";
+			productReference = 15BFF5B5222AEBC7009C6470 /* dialetus-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		15BFF5BF222AEBC7009C6470 /* dialetus-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15BFF5CF222AEBC7009C6470 /* Build configuration list for PBXNativeTarget "dialetus-iosUITests" */;
+			buildPhases = (
+				15BFF5BC222AEBC7009C6470 /* Sources */,
+				15BFF5BD222AEBC7009C6470 /* Frameworks */,
+				15BFF5BE222AEBC7009C6470 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15BFF5C2222AEBC7009C6470 /* PBXTargetDependency */,
+			);
+			name = "dialetus-iosUITests";
+			productName = "dialetus-iosUITests";
+			productReference = 15BFF5C0222AEBC7009C6470 /* dialetus-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15BFF599222AEBC5009C6470 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Pamela Ianovalli";
+				TargetAttributes = {
+					15BFF5A0222AEBC5009C6470 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					15BFF5B4222AEBC7009C6470 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 15BFF5A0222AEBC5009C6470;
+					};
+					15BFF5BF222AEBC7009C6470 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 15BFF5A0222AEBC5009C6470;
+					};
+				};
+			};
+			buildConfigurationList = 15BFF59C222AEBC5009C6470 /* Build configuration list for PBXProject "dialetus-ios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 15BFF598222AEBC5009C6470;
+			productRefGroup = 15BFF5A2222AEBC5009C6470 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15BFF5A0222AEBC5009C6470 /* dialetus-ios */,
+				15BFF5B4222AEBC7009C6470 /* dialetus-iosTests */,
+				15BFF5BF222AEBC7009C6470 /* dialetus-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		15BFF59F222AEBC5009C6470 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15BFF5AF222AEBC6009C6470 /* LaunchScreen.storyboard in Resources */,
+				15BFF5AC222AEBC6009C6470 /* Assets.xcassets in Resources */,
+				15BFF5AA222AEBC5009C6470 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15BFF5B3222AEBC7009C6470 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15BFF5BE222AEBC7009C6470 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6BA611E67B3374789B7EB71F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-dialetus-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15BFF59D222AEBC5009C6470 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15BFF5A7222AEBC5009C6470 /* ViewController.swift in Sources */,
+				15BFF5A5222AEBC5009C6470 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15BFF5B1222AEBC7009C6470 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15BFF5BA222AEBC7009C6470 /* dialetus_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15BFF5BC222AEBC7009C6470 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15BFF5C5222AEBC7009C6470 /* dialetus_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15BFF5B7222AEBC7009C6470 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15BFF5A0222AEBC5009C6470 /* dialetus-ios */;
+			targetProxy = 15BFF5B6222AEBC7009C6470 /* PBXContainerItemProxy */;
+		};
+		15BFF5C2222AEBC7009C6470 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15BFF5A0222AEBC5009C6470 /* dialetus-ios */;
+			targetProxy = 15BFF5C1222AEBC7009C6470 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		15BFF5A8222AEBC5009C6470 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15BFF5A9222AEBC5009C6470 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		15BFF5AD222AEBC6009C6470 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15BFF5AE222AEBC6009C6470 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		15BFF5C7222AEBC7009C6470 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		15BFF5C8222AEBC7009C6470 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		15BFF5CA222AEBC7009C6470 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3CD906C035DD5ACE35FFF96 /* Pods-dialetus-ios.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X74VG8LAZG;
+				INFOPLIST_FILE = "dialetus-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pamelaianovalli.dialetus-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		15BFF5CB222AEBC7009C6470 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D9236B5B43A6D1C214B5D82 /* Pods-dialetus-ios.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X74VG8LAZG;
+				INFOPLIST_FILE = "dialetus-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pamelaianovalli.dialetus-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		15BFF5CD222AEBC7009C6470 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "dialetus-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pamelaianovalli.dialetus-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dialetus-ios.app/dialetus-ios";
+			};
+			name = Debug;
+		};
+		15BFF5CE222AEBC7009C6470 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "dialetus-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pamelaianovalli.dialetus-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dialetus-ios.app/dialetus-ios";
+			};
+			name = Release;
+		};
+		15BFF5D0222AEBC7009C6470 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "dialetus-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pamelaianovalli.dialetus-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "dialetus-ios";
+			};
+			name = Debug;
+		};
+		15BFF5D1222AEBC7009C6470 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "dialetus-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pamelaianovalli.dialetus-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "dialetus-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15BFF59C222AEBC5009C6470 /* Build configuration list for PBXProject "dialetus-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15BFF5C7222AEBC7009C6470 /* Debug */,
+				15BFF5C8222AEBC7009C6470 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15BFF5C9222AEBC7009C6470 /* Build configuration list for PBXNativeTarget "dialetus-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15BFF5CA222AEBC7009C6470 /* Debug */,
+				15BFF5CB222AEBC7009C6470 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15BFF5CC222AEBC7009C6470 /* Build configuration list for PBXNativeTarget "dialetus-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15BFF5CD222AEBC7009C6470 /* Debug */,
+				15BFF5CE222AEBC7009C6470 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15BFF5CF222AEBC7009C6470 /* Build configuration list for PBXNativeTarget "dialetus-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15BFF5D0222AEBC7009C6470 /* Debug */,
+				15BFF5D1222AEBC7009C6470 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 15BFF599222AEBC5009C6470 /* Project object */;
+}
