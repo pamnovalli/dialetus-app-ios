@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1504A4DC222B0CBD00034E89 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1504A4DB222B0CBD00034E89 /* MainViewController.swift */; };
 		1504A4DE222B0CF800034E89 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1504A4DD222B0CF800034E89 /* DetailViewController.swift */; };
-		1504A4E0222B0D1900034E89 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1504A4DF222B0D1900034E89 /* FilterViewController.swift */; };
+		1504A4E0222B0D1900034E89 /* FilterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1504A4DF222B0D1900034E89 /* FilterTableViewController.swift */; };
 		1504A4E4222B130100034E89 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1504A4E3222B130100034E89 /* Region.swift */; };
 		1504A4E6222B13C900034E89 /* Dialect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1504A4E5222B13C900034E89 /* Dialect.swift */; };
 		1504A4E9222B187F00034E89 /* DialetusManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1504A4E8222B187F00034E89 /* DialetusManager.swift */; };
@@ -24,6 +24,8 @@
 		15BFF5AF222AEBC6009C6470 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15BFF5AD222AEBC6009C6470 /* LaunchScreen.storyboard */; };
 		15BFF5BA222AEBC7009C6470 /* dialetus_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BFF5B9222AEBC7009C6470 /* dialetus_iosTests.swift */; };
 		15BFF5C5222AEBC7009C6470 /* dialetus_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BFF5C4222AEBC7009C6470 /* dialetus_iosUITests.swift */; };
+		15E9AE2B222C4CD100678C82 /* RegionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E9AE29222C4CD100678C82 /* RegionTableViewCell.swift */; };
+		15E9AE2C222C4CD100678C82 /* RegionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15E9AE2A222C4CD100678C82 /* RegionTableViewCell.xib */; };
 		40A57E16D6BCFC730B02243E /* Pods_dialetus_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42358769CE5268ACD06BF21F /* Pods_dialetus_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,7 +49,7 @@
 /* Begin PBXFileReference section */
 		1504A4DB222B0CBD00034E89 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1504A4DD222B0CF800034E89 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		1504A4DF222B0D1900034E89 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		1504A4DF222B0D1900034E89 /* FilterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTableViewController.swift; sourceTree = "<group>"; };
 		1504A4E3222B130100034E89 /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 		1504A4E5222B13C900034E89 /* Dialect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dialect.swift; sourceTree = "<group>"; };
 		1504A4E8222B187F00034E89 /* DialetusManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialetusManager.swift; sourceTree = "<group>"; };
@@ -68,6 +70,8 @@
 		15BFF5C0222AEBC7009C6470 /* dialetus-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dialetus-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15BFF5C4222AEBC7009C6470 /* dialetus_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dialetus_iosUITests.swift; sourceTree = "<group>"; };
 		15BFF5C6222AEBC7009C6470 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15E9AE29222C4CD100678C82 /* RegionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionTableViewCell.swift; sourceTree = "<group>"; };
+		15E9AE2A222C4CD100678C82 /* RegionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegionTableViewCell.xib; sourceTree = "<group>"; };
 		42358769CE5268ACD06BF21F /* Pods_dialetus_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dialetus_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D9236B5B43A6D1C214B5D82 /* Pods-dialetus-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dialetus-ios.release.xcconfig"; path = "Target Support Files/Pods-dialetus-ios/Pods-dialetus-ios.release.xcconfig"; sourceTree = "<group>"; };
 		D3CD906C035DD5ACE35FFF96 /* Pods-dialetus-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dialetus-ios.debug.xcconfig"; path = "Target Support Files/Pods-dialetus-ios/Pods-dialetus-ios.debug.xcconfig"; sourceTree = "<group>"; };
@@ -102,7 +106,7 @@
 		1504A4D7222B0BA400034E89 /* ViewControlles */ = {
 			isa = PBXGroup;
 			children = (
-				1504A4DA222B0C4D00034E89 /* FilterViewController */,
+				1504A4DA222B0C4D00034E89 /* FilterTableViewController */,
 				1504A4D9222B0C2700034E89 /* DetailViewController */,
 				1504A4D8222B0BFF00034E89 /* MainViewController */,
 			);
@@ -127,13 +131,13 @@
 			path = DetailViewController;
 			sourceTree = "<group>";
 		};
-		1504A4DA222B0C4D00034E89 /* FilterViewController */ = {
+		1504A4DA222B0C4D00034E89 /* FilterTableViewController */ = {
 			isa = PBXGroup;
 			children = (
-				1504A4DF222B0D1900034E89 /* FilterViewController.swift */,
+				1504A4DF222B0D1900034E89 /* FilterTableViewController.swift */,
 				1504A4EE222B2D7900034E89 /* FilterViewModel.swift */,
 			);
-			path = FilterViewController;
+			path = FilterTableViewController;
 			sourceTree = "<group>";
 		};
 		1504A4E1222B0ECB00034E89 /* Services */ = {
@@ -164,6 +168,7 @@
 		1504A4F0222B35D700034E89 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				15E9AE28222C4C7600678C82 /* RegionTableViewCell */,
 				1504A4F1222B35FC00034E89 /* CardTableViewCell */,
 			);
 			path = Cells;
@@ -232,6 +237,15 @@
 				15BFF5C6222AEBC7009C6470 /* Info.plist */,
 			);
 			path = "dialetus-iosUITests";
+			sourceTree = "<group>";
+		};
+		15E9AE28222C4C7600678C82 /* RegionTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				15E9AE29222C4CD100678C82 /* RegionTableViewCell.swift */,
+				15E9AE2A222C4CD100678C82 /* RegionTableViewCell.xib */,
+			);
+			path = RegionTableViewCell;
 			sourceTree = "<group>";
 		};
 		60ECF8B77150D7AE79BC37F6 /* Frameworks */ = {
@@ -357,6 +371,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15BFF5AF222AEBC6009C6470 /* LaunchScreen.storyboard in Resources */,
+				15E9AE2C222C4CD100678C82 /* RegionTableViewCell.xib in Resources */,
 				15BFF5AC222AEBC6009C6470 /* Assets.xcassets in Resources */,
 				15BFF5AA222AEBC5009C6470 /* Main.storyboard in Resources */,
 				1504A4F7222B36BF00034E89 /* CardTableViewCell.xib in Resources */,
@@ -412,9 +427,10 @@
 				1504A4DE222B0CF800034E89 /* DetailViewController.swift in Sources */,
 				1504A4F6222B36BF00034E89 /* CardTableViewCell.swift in Sources */,
 				1504A4E9222B187F00034E89 /* DialetusManager.swift in Sources */,
+				15E9AE2B222C4CD100678C82 /* RegionTableViewCell.swift in Sources */,
 				1504A4EF222B2D7900034E89 /* FilterViewModel.swift in Sources */,
 				15BFF5A5222AEBC5009C6470 /* AppDelegate.swift in Sources */,
-				1504A4E0222B0D1900034E89 /* FilterViewController.swift in Sources */,
+				1504A4E0222B0D1900034E89 /* FilterTableViewController.swift in Sources */,
 				1504A4ED222B2D5E00034E89 /* DetailViewModel.swift in Sources */,
 				1504A4E4222B130100034E89 /* Region.swift in Sources */,
 				1504A4E6222B13C900034E89 /* Dialect.swift in Sources */,
@@ -597,14 +613,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X74VG8LAZG;
+				DEVELOPMENT_TEAM = 9QFXWY5BV7;
 				INFOPLIST_FILE = "dialetus-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pamelaianovalli.dialetus-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pamelabembeianovalli.dialetus-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
@@ -619,14 +635,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X74VG8LAZG;
+				DEVELOPMENT_TEAM = 9QFXWY5BV7;
 				INFOPLIST_FILE = "dialetus-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pamelaianovalli.dialetus-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pamelabembeianovalli.dialetus-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;

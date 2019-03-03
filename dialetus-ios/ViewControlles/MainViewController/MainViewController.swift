@@ -9,11 +9,26 @@
 import UIKit
 
 class MainViewController: UITableViewController {
+    
+    private lazy var searchController: UISearchController = {
+        
+        let controller = UISearchController(searchResultsController: nil)
+        controller.searchBar.placeholder = "Procurar Dialeto"
+        controller.searchBar.delegate = self
+        
+        return controller
+    }()
 
     private let viewModel = MainViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = viewModel.regionName.capitalized
+        
+        navigationItem.searchController = searchController
+        navigationItem.hidesSearchBarWhenScrolling = false
+        definesPresentationContext = true
+        
         viewModel.delegate = self
         
         tableView.register(UINib(nibName: "CardTableViewCell", bundle: nil), forCellReuseIdentifier: "CardTableViewCell")
@@ -22,7 +37,23 @@ class MainViewController: UITableViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        viewModel.loadDialects(from: "paulistes")
+        viewModel.loadDialects()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+            case "FilterTableViewController":
+            
+                if
+                    let navigationController = segue.destination as? UINavigationController,
+                    let filterController = navigationController.viewControllers.first as?
+                    FilterTableViewController
+                {
+                    filterController.delegate = self
+                }
+            default:
+                break
+        }
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -52,8 +83,40 @@ extension MainViewController: MainViewModelDelegate{
     
     func reload() {
         DispatchQueue.main.async{
+            self.title = self.viewModel.regionName.capitalized
             self.tableView.reloadData()
         }
     }
 }
 
+extension MainViewController: FilterTableViewControllerDelegate{
+    
+    func controller(viewController: FilterTableViewController, didSelect region: Region) {
+        
+        viewModel.update(region: region)
+        viewController.dismiss(animated: true) {
+            self.viewModel.loadDialects()
+        }
+    }
+}
+
+extension MainViewController: UISearchBarDelegate {
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        viewModel.search(searchText.isEmpty ? nil : searchText)
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        let text  = searchBar.text
+        viewModel.search(text)
+        searchController.isActive = false
+        searchController.searchBar.text = text
+        
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        viewModel.search(nil)
+    }
+    
+    
+}

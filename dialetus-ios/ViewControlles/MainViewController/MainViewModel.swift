@@ -14,28 +14,55 @@ protocol MainViewModelDelegate: class {
 
 class MainViewModel {
     
+    private (set) var regionName: String = "paulistes"
     
-    private (set) var dialects = [Dialect]()
+    private var original = [Dialect]()
+    private var searchText: String?
+    
+    var dialects: [Dialect] {
+        
+        guard let searchText = self.searchText else {
+            return original
+        }
+        
+        let searchResult = original.filter({ (dialect) -> Bool in
+            return dialect.dialect.lowercased().contains(searchText.lowercased())
+        })
+        
+        return searchResult
+    }
+    
     
     weak var delegate: MainViewModelDelegate?
     
-    func loadDialects(from region: String){
+    func update(region: Region){
         
-        DialetusManager.shared.dialects(from: region) { [weak self](dialects, error) in
+        self.regionName = region.name
+    }
+    
+    func loadDialects(){
+        
+        DialetusManager.shared.dialects(from: regionName) { [weak self](dialects, error) in
             
             if let error = error {
                 print("\(error)")
                 return
             }
             if let dialects = dialects {
-                self?.dialects = dialects
+                self?.original = dialects
             } else {
-                self?.dialects = []
+                self?.original = []
             }
             
             self?.delegate?.reload()
         }
         
+        
+    }
+    
+    func search(_ text: String?) {
+        self.searchText = text
+        self.delegate?.reload()
         
     }
     
