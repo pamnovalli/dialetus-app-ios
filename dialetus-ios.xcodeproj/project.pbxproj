@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15021DE5222CAEAA00EDFF5B /* ExampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15021DE3222CAEAA00EDFF5B /* ExampleTableViewCell.swift */; };
+		15021DE6222CAEAA00EDFF5B /* ExampleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15021DE4222CAEAA00EDFF5B /* ExampleTableViewCell.xib */; };
+		15021DEA222CB82100EDFF5B /* DialectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15021DE9222CB82100EDFF5B /* DialectView.swift */; };
+		15021DEE222CB87800EDFF5B /* DialectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15021DED222CB87800EDFF5B /* DialectView.xib */; };
 		1504A4DC222B0CBD00034E89 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1504A4DB222B0CBD00034E89 /* MainViewController.swift */; };
 		1504A4DE222B0CF800034E89 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1504A4DD222B0CF800034E89 /* DetailViewController.swift */; };
 		1504A4E0222B0D1900034E89 /* FilterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1504A4DF222B0D1900034E89 /* FilterTableViewController.swift */; };
@@ -47,6 +51,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15021DE3222CAEAA00EDFF5B /* ExampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTableViewCell.swift; sourceTree = "<group>"; };
+		15021DE4222CAEAA00EDFF5B /* ExampleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampleTableViewCell.xib; sourceTree = "<group>"; };
+		15021DE9222CB82100EDFF5B /* DialectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialectView.swift; sourceTree = "<group>"; };
+		15021DED222CB87800EDFF5B /* DialectView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DialectView.xib; sourceTree = "<group>"; };
 		1504A4DB222B0CBD00034E89 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1504A4DD222B0CF800034E89 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		1504A4DF222B0D1900034E89 /* FilterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTableViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +111,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15021DE2222CAE6D00EDFF5B /* ExampleTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				15021DE3222CAEAA00EDFF5B /* ExampleTableViewCell.swift */,
+				15021DE4222CAEAA00EDFF5B /* ExampleTableViewCell.xib */,
+			);
+			path = ExampleTableViewCell;
+			sourceTree = "<group>";
+		};
+		15021DE7222CB75A00EDFF5B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				15021DE8222CB7DB00EDFF5B /* DialectView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		15021DE8222CB7DB00EDFF5B /* DialectView */ = {
+			isa = PBXGroup;
+			children = (
+				15021DE9222CB82100EDFF5B /* DialectView.swift */,
+				15021DED222CB87800EDFF5B /* DialectView.xib */,
+			);
+			path = DialectView;
+			sourceTree = "<group>";
+		};
 		1504A4D7222B0BA400034E89 /* ViewControlles */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +202,7 @@
 		1504A4F0222B35D700034E89 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				15021DE2222CAE6D00EDFF5B /* ExampleTableViewCell */,
 				15E9AE28222C4C7600678C82 /* RegionTableViewCell */,
 				1504A4F1222B35FC00034E89 /* CardTableViewCell */,
 			);
@@ -208,6 +243,7 @@
 		15BFF5A3222AEBC5009C6470 /* dialetus-ios */ = {
 			isa = PBXGroup;
 			children = (
+				15021DE7222CB75A00EDFF5B /* Views */,
 				1504A4F0222B35D700034E89 /* Cells */,
 				1504A4E2222B0EE400034E89 /* Models */,
 				1504A4E1222B0ECB00034E89 /* Services */,
@@ -374,6 +410,8 @@
 				15E9AE2C222C4CD100678C82 /* RegionTableViewCell.xib in Resources */,
 				15BFF5AC222AEBC6009C6470 /* Assets.xcassets in Resources */,
 				15BFF5AA222AEBC5009C6470 /* Main.storyboard in Resources */,
+				15021DE6222CAEAA00EDFF5B /* ExampleTableViewCell.xib in Resources */,
+				15021DEE222CB87800EDFF5B /* DialectView.xib in Resources */,
 				1504A4F7222B36BF00034E89 /* CardTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,11 +465,13 @@
 				1504A4DE222B0CF800034E89 /* DetailViewController.swift in Sources */,
 				1504A4F6222B36BF00034E89 /* CardTableViewCell.swift in Sources */,
 				1504A4E9222B187F00034E89 /* DialetusManager.swift in Sources */,
+				15021DE5222CAEAA00EDFF5B /* ExampleTableViewCell.swift in Sources */,
 				15E9AE2B222C4CD100678C82 /* RegionTableViewCell.swift in Sources */,
 				1504A4EF222B2D7900034E89 /* FilterViewModel.swift in Sources */,
 				15BFF5A5222AEBC5009C6470 /* AppDelegate.swift in Sources */,
 				1504A4E0222B0D1900034E89 /* FilterTableViewController.swift in Sources */,
 				1504A4ED222B2D5E00034E89 /* DetailViewModel.swift in Sources */,
+				15021DEA222CB82100EDFF5B /* DialectView.swift in Sources */,
 				1504A4E4222B130100034E89 /* Region.swift in Sources */,
 				1504A4E6222B13C900034E89 /* Dialect.swift in Sources */,
 				1504A4DC222B0CBD00034E89 /* MainViewController.swift in Sources */,

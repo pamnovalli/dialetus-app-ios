@@ -32,6 +32,7 @@ class MainViewController: UITableViewController {
         viewModel.delegate = self
         
         tableView.register(UINib(nibName: "CardTableViewCell", bundle: nil), forCellReuseIdentifier: "CardTableViewCell")
+        tableView.tableFooterView = UIView()
     }
     
     
@@ -50,6 +51,14 @@ class MainViewController: UITableViewController {
                     FilterTableViewController
                 {
                     filterController.delegate = self
+                }
+            
+            case "DetailTableViewController":
+                if
+                    let detailController = segue.destination as? DetailViewController ,
+                    let dialect = sender as? Dialect
+                {
+                    detailController.viewModel = DetailViewModel(dialect: dialect)
                 }
             default:
                 break
@@ -74,6 +83,12 @@ class MainViewController: UITableViewController {
         
         cell.setup(with: dialect)
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let dialect = viewModel.dialects[indexPath.row]
+        self.performSegue(withIdentifier: "DetailTableViewController", sender: dialect)
     }
     
 }

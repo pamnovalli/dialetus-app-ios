@@ -7,3 +7,20 @@
 //
 
 import Foundation
+
+
+class DetailViewModel {
+    
+    let dialect: Dialect
+    
+    var examples: [String] {
+        return dialect.examples
+    }
+    
+    init(dialect: Dialect){
+        self.dialect = dialect
+    }
+    
+    
+    
+}

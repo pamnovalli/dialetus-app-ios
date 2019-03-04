@@ -27,7 +27,7 @@ class FilterTableViewController: UITableViewController {
         self.title = "Available Regions"
         
         tableView.register(UINib(nibName: "RegionTableViewCell", bundle: nil), forCellReuseIdentifier: "RegionTableViewCell")
-        
+        tableView.tableFooterView = UIView()
         viewModel.delegate = self
         
         
