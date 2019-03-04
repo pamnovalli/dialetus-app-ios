@@ -9,7 +9,9 @@
 import Foundation
 
 protocol MainViewModelDelegate: class {
-    func reload()
+    func willLoadData()
+    func didLoadData()
+    func didReceive(error: Error)
 }
 
 class MainViewModel {
@@ -42,10 +44,12 @@ class MainViewModel {
     
     func loadDialects(){
         
+        delegate?.willLoadData()
+        
         DialetusManager.shared.dialects(from: regionName) { [weak self](dialects, error) in
             
             if let error = error {
-                print("\(error)")
+                self?.delegate?.didReceive(error: error)
                 return
             }
             if let dialects = dialects {
@@ -54,7 +58,7 @@ class MainViewModel {
                 self?.original = []
             }
             
-            self?.delegate?.reload()
+            self?.delegate?.didLoadData()
         }
         
         
@@ -62,7 +66,7 @@ class MainViewModel {
     
     func search(_ text: String?) {
         self.searchText = text
-        self.delegate?.reload()
+        self.delegate?.didLoadData()
         
     }
     

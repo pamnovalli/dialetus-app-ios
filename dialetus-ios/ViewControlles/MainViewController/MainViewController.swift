@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import JGProgressHUD
 
 class MainViewController: UITableViewController {
     
@@ -19,6 +20,8 @@ class MainViewController: UITableViewController {
         return controller
     }()
 
+    
+    private let hud = JGProgressHUD(style: .dark)
     private let viewModel = MainViewModel()
     
     override func viewDidLoad() {
@@ -33,12 +36,13 @@ class MainViewController: UITableViewController {
         
         tableView.register(UINib(nibName: "CardTableViewCell", bundle: nil), forCellReuseIdentifier: "CardTableViewCell")
         tableView.tableFooterView = UIView()
+        viewModel.loadDialects()
     }
     
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        viewModel.loadDialects()
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -93,11 +97,31 @@ class MainViewController: UITableViewController {
     
 }
 
-    
+
 extension MainViewController: MainViewModelDelegate{
     
-    func reload() {
+    func didReceive(error: Error) {
         DispatchQueue.main.async{
+            self.hud.textLabel.text = error.localizedDescription
+            self.hud.indicatorView = JGProgressHUDErrorIndicatorView()
+            self.hud.dismiss(afterDelay: 3.0)
+        }
+    }
+    
+    func willLoadData() {
+        hud.position = .center
+        hud.indicatorView = JGProgressHUDIndeterminateIndicatorView()
+        hud.textLabel.text = "Loading..."
+        hud.show(in: self.view)
+        
+    }
+    
+    func didLoadData() {
+        DispatchQueue.main.async{
+            
+            self.hud.textLabel.text = "Success!"
+            self.hud.indicatorView = JGProgressHUDSuccessIndicatorView()
+            self.hud.dismiss(afterDelay: 1.0)
             self.title = self.viewModel.regionName.capitalized
             self.tableView.reloadData()
         }

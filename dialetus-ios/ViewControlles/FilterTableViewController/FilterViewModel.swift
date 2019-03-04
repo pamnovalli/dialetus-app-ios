@@ -9,7 +9,7 @@
 import Foundation
 
 protocol FilterViewModelDelegate: class {
-    
+    func willStartLoadRegions()
     func didFinishLoadRegions()
 }
 
@@ -21,6 +21,7 @@ class FilterViewModel{
     
     func loadRegions() {
         
+        delegate?.willStartLoadRegions()
         DialetusManager.shared.regions { (regions, error) in
             
             if let error = error {

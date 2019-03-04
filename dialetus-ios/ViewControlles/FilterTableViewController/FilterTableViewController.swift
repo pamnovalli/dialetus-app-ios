@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import JGProgressHUD
 
 protocol FilterTableViewControllerDelegate: class {
     
@@ -15,6 +16,8 @@ protocol FilterTableViewControllerDelegate: class {
 }
 
 class FilterTableViewController: UITableViewController {
+    
+    private let hud = JGProgressHUD(style: .dark)
     
     private let viewModel = FilterViewModel()
 
@@ -73,9 +76,16 @@ class FilterTableViewController: UITableViewController {
 }
 
 extension FilterTableViewController: FilterViewModelDelegate {
-    func didFinishLoadRegions() {
+    
+    func willStartLoadRegions() {
+        hud.textLabel.text = "Loading..."
+        hud.show(in: self.view)
         
+    }
+    
+    func didFinishLoadRegions() {
         DispatchQueue.main.async {
+            self.hud.dismiss(afterDelay: 0.3)
             self.tableView.reloadData()
         }
     }
