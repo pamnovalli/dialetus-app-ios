@@ -16,10 +16,15 @@ class MainViewController: UITableViewController {
         let controller = UISearchController(searchResultsController: nil)
         controller.searchBar.placeholder = "Procurar Dialeto"
         controller.searchBar.delegate = self
-        
         return controller
     }()
 
+    private lazy var pullToRefreshControl: UIRefreshControl = {
+        let control = UIRefreshControl()
+        
+        control.addTarget(self, action: #selector(update), for: UIControl.Event.valueChanged)
+        return control
+    }()
     
     private let hud = JGProgressHUD(style: .dark)
     private let viewModel = MainViewModel()
@@ -35,6 +40,7 @@ class MainViewController: UITableViewController {
         viewModel.delegate = self
         
         tableView.register(UINib(nibName: "CardTableViewCell", bundle: nil), forCellReuseIdentifier: "CardTableViewCell")
+        tableView.refreshControl = pullToRefreshControl
         tableView.tableFooterView = UIView()
         viewModel.loadDialects()
     }
@@ -95,6 +101,10 @@ class MainViewController: UITableViewController {
         self.performSegue(withIdentifier: "DetailTableViewController", sender: dialect)
     }
     
+    @objc func update() {
+        viewModel.loadDialects()
+    }
+    
 }
 
 
@@ -105,6 +115,7 @@ extension MainViewController: MainViewModelDelegate{
             self.hud.textLabel.text = error.localizedDescription
             self.hud.indicatorView = JGProgressHUDErrorIndicatorView()
             self.hud.dismiss(afterDelay: 3.0)
+            self.pullToRefreshControl.endRefreshing()
         }
     }
     
@@ -124,6 +135,7 @@ extension MainViewController: MainViewModelDelegate{
             self.hud.dismiss(afterDelay: 1.0)
             self.title = self.viewModel.regionName.capitalized
             self.tableView.reloadData()
+            self.pullToRefreshControl.endRefreshing()
         }
     }
 }
