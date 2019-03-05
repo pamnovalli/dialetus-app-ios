@@ -5,7 +5,9 @@ This application is inspired by the [Dialetus WebPage](https://github.com/mvfsil
 
 Choose a Brazillian region and the app will bring to you a list of idiomatic expressions from that particular region.
 
-![Demo time!!!](dialetus.gif)
+Here is a demo. :D
+
+<img src="dialetus.gif" width="40%">
 
 # How to run Dialetus
 
