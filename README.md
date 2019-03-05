@@ -1,7 +1,6 @@
 # Dialetus iOS - Swift Project
 
-This application is inspired by the [Dialetus WebPage](https://github.com/mvfsillva/dialetus), using [Dialetus-Service](https://github.com/mvfsillva/dialetus-service).
-
+This iOS application is inspired by the [Dialetus WebPage](https://github.com/mvfsillva/dialetus), using [Dialetus-Service](https://github.com/mvfsillva/dialetus-service), both created and developed by [@mvfsillva](https://github.com/mvfsillva) and the community.
 
 Choose a Brazillian region and the app will bring to you a list of idiomatic expressions from that particular region.
 
